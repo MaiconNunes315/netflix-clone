@@ -1,6 +1,6 @@
 <h1 align="center">Welcome project for Netflix Clone
 
-> 🦀 Projeto de criacão de uma single page com a interface da netflix. Neste projeto troquei os filmes pelos canais do youtube sobre tecnologia, e as fotos foram colocadas redondas assim como nos canais do youtube.
+> 🦀 Projeto de criacão de uma single page com a interface da netflix. Neste projeto troquei os filmes por canais do youtube sobre tecnologia, e as fotos foram colocadas redondas assim como nos canais do youtube.
 ## Download
   
   
