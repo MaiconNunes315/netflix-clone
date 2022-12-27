@@ -1,11 +1,12 @@
 import Header from "./components/header/Header"
-
+import ImageMain from "./components/imageMain/ImageMain"
 
 function App() {
 
   return (
-    <div className="relative">
-      <Header/>
+    <div className="app">
+      <Header />
+      <ImageMain/>
     </div>
   )
 }

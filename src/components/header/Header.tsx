@@ -47,7 +47,7 @@ export default function Header() {
               
                 </div>
               
-              <span>Infantil</span>
+              <span className="kids">Infantil</span>
 
               <div className="div-bell">
                   <Bell size={30} color="#a52c2c" weight="light" />
