@@ -1,3 +1,4 @@
+import "./header-nav.scss";
 
 type IList = {
     list: string;
@@ -6,8 +7,8 @@ type IList = {
 
 export default function Nav({list}:IList) {
  return (
-            <ul className='flex ml-4 items-center font-medium'> 
-             <li className="cursor-pointer">{list}</li>
+            <ul className="list"> 
+             <li>{list}</li>
             </ul>
  )
   
