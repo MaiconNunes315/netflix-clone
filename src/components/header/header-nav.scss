@@ -1,22 +1,108 @@
+
+  
+
+
+
 header{
 
     display: flex;
     justify-content: space-between;    
-    height: 50px;
-    box-shadow: inset 0 60px 50px -55px black;
-    
+    height: 4vw;
+    min-height: 50px;
+    box-shadow: inset 0 4vw 60px -55px black;
 
     nav{
         display: flex;
         align-items: center;
-        gap: 10px;
-        color: #FFFFFF;
+        color: #e5e5e5;
+
+        .navigate{
+            position:relative;
+            color: white;
+            display:flex;
+            justify-content:center;
+    
+            &::before{
+                content: "navegar";
+            }
+    
+            .hr{
+                border-width: 0 0 3px 0;
+            }
+    
+            .down{
+                width: 13px;
+                align-self: flex-end;
+                cursor:pointer;   
+            }
+            .hidden{
+                display: none;
+            }
+    
+            ul{
+                position: absolute;
+                border-right:solid 0.5px rgb(58, 56, 56);
+                border-left:solid 0.5px rgb(53, 52, 52);
+                border-bottom:solid 0.5px rgb(70, 70, 70);
+                display: flex;
+                flex-direction: column;
+                margin-top: 60px;
+                width: 250px;
+                text-align: center;
+                
+    
+                li{
+                    height: 50px;
+                    padding:20px 0;
+                    cursor: pointer;
+                    list-style: none;
+                    background-color: rgba(17, 17, 17, 0.644);
+                    width: 100%;
+                    transition:150ms;
+    
+                    
+                    &:hover{
+                        background-color: rgba(43, 40, 40, 0.644);
+                    }
+                }
+            }
+        }
+
+        .list{
+
+            ul{
+                display: flex;
+                list-style: none;
+                font-family: sans-serif;
+                font-weight: 500;
+                gap: 20px;
+            }
+            
+
+            .hidden{
+                display: none;
+            }
+        
+            li{
+                cursor: pointer;
+                font-size: clamp(12px,1vw,17px);
+                font-weight: 500;
+        
+                .active{
+                    font-weight: bold;
+                }
+
+            }
+
+            }
+            
+        
     }
 
     .nav{
-        width:100px;
-        height: 34px;
-        margin-left:80px;
+        width:8%;
+       min-width: 60px;
+        margin:0 3% 0 5%;
     }
 
     .header-right{
@@ -24,8 +110,8 @@ header{
         display:flex;
         align-items: center;
         font-weight: 500;
-        gap:25px;
-        margin-right: 80px;
+        gap: 20px;
+        margin-right: 5%;
         
 
         .search-box{
@@ -34,6 +120,7 @@ header{
             position: relative;
             height: 35px;
             display: flex;
+        
 
             input{
                 width: 100%;
@@ -134,14 +221,3 @@ header{
     }
 }
 
-.list{
-    display: flex;
-    margin-left: 10px;
-    list-style: none;
-
-    li{
-        cursor: pointer;
-        font-size: clamp(12px,1vw,16px);
-        font-weight: 500;
-    }
-}
