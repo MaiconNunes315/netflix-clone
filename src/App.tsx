@@ -3,6 +3,9 @@ import ImageMain from "./components/imageMain/ImageMain"
 import {useState, useEffect} from "react"
 import { getLists } from "./tmdbList"
 
+import "./App.scss";
+import Carrousel from "./components/carrousel/Carrousel";
+
 type Imovies = {
   genres_id: []
   id:number
@@ -24,27 +27,20 @@ useEffect(() => {
   
 }, [])
   
-  const listTemporary = movies.find((movie) => {
-    return { 
-      id: movie.id,
-      background: movie.backdrop_path,
-      title: movie.title,
-      synopsis: movie.overview,
-      
-    }
-  })
+const numberAleatory = () => { return Math.floor(Math.random() * 20) }
   
-  console.log(listTemporary)
-  
-  
-
+  const listTemporary = movies[numberAleatory()]
   const image = `https://image.tmdb.org/t/p/original${listTemporary?.backdrop_path}`
   
 
   return (
     <div className="app">
+
       <Header />
-      <ImageMain style={{ backgroundImage: `url(${image})` }} movieOrTv={"Filme"} title={listTemporary?.title} synopsis={listTemporary?.overview} />
+      <ImageMain style={{ backgroundImage: `url(${image})`}} movieOrTv={"Filme"} title={listTemporary?.title} synopsis={listTemporary?.overview} />
+      
+     
+
     </div>
   )
 }

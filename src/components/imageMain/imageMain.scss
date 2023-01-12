@@ -1,28 +1,27 @@
 $fontJua : 'Jua', sans-serif;
 
-section{
+main{
 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    z-index: -1;
     width: 100%;
-    height: 100vh;
+    background-color: black;
+    
+section{
+    
+    overflow: hidden;
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    
-    position: absolute;
-    top: 0;
-    padding:4% 5%;
-    z-index: -1;
     background-size: 100%;
     background-repeat: no-repeat;
+    height: 50vw;
+    justify-content: center;
+    padding: 0 3%;
     
-
-    // .image-main{
-    //     width: 100%;
-    //     box-shadow: inset 0 -20px 20px -14px  black;
-    //     z-index: -1;
-    //     position: absolute;
-    //     top: 0;
-    // }
 
     .description{
         display: flex;
@@ -39,15 +38,20 @@ section{
         }
 
         span{
-            font-size: clamp(10px,2vw,25px);
+            font-size: clamp(8px,2vw,20px);
             vertical-align: 1vw;
+            color: #cfc7c7;
+            font-family: Helvetica;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            font-weight: bold;
         }
 
         h1{
             font-family: $fontJua;
-            font-size: clamp(25px, 5vw, 100px);
-            width: 500px;
-            margin: 5% 0;
+            font-size: clamp(20px, 5vw, 100px);
+            width: 80%;
+            margin: 5px 0 5% 0;
             line-height: 90%;
         
         }
@@ -57,22 +61,22 @@ section{
     .synopsis{
         font-size: 1.2vw;
         font-family: helvetica;
-        width: 60%;
-        max-width: 600px;
-        margin-bottom: 5%;
+        width: 45%;
+        margin-bottom: 2.5%;
         
     }
 
     .div-button{
         
         display: flex;
-        width: 31%;
-        gap: 10px;
-       
+        width: 28%;
+        justify-content: space-between;
+        gap: 15px;
 
         .button-one{
+            
             background-color: #ffffff;
-
+            width: 38%;
             &:hover{
                 background-color: rgb(218, 213, 213);
             }
@@ -80,7 +84,7 @@ section{
         .button-two{
             background-color: rgba(109, 109, 110, 0.7);
             color: #ffffff;
-
+            flex: 2;
             &:hover{
                 background-color: rgba(109, 109, 110, 0.5);
             }
@@ -88,21 +92,31 @@ section{
 
         .button-one, .button-two{
             
-            
-            height: 40%;
-            padding: 0 7%;
             border-radius: 4px;
             border: 0;
             display: flex;
             align-items: center;
+            gap: 6%;
             justify-content: center;
-            gap: 10px;
             cursor:pointer;
+            font-weight: bold;
+            min-width: 90px;
+            padding: 10px 5px;
+            height: 5vw;
+            max-height: 65px;
+            
+
+            svg{
+                width: 18%;
+                min-width: 15px;
+                max-width: 35px;               
+            }
 
             span{
-                font-size: clamp(5px, 2vw,23px);
+                font-size: clamp(5px, 1.5vw, 23px);
                 font-family: Helvetica;
-                margin: 30% 0;
+                margin: 3% 0;
+                
             }
     
 
@@ -110,8 +124,12 @@ section{
         }
     }
 
+    .content{
     
+      
+    }
 
 
 }
 
+}
