@@ -1,4 +1,15 @@
 .app{
-    position: relative;
-}
 
+    position: relative;
+    background-color: #141414;
+    
+    
+
+    .div-carrousel{
+        position: absolute;
+        bottom: 0;
+        height: 150px;
+        width: 100%;
+        
+    }
+}

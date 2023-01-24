@@ -36,8 +36,17 @@ const numberAleatory = () => { return Math.floor(Math.random() * 20) }
   return (
     <div className="app">
 
+      <div className="div-main">
       <Header />
       <ImageMain style={{ backgroundImage: `url(${image})`}} movieOrTv={"Filme"} title={listTemporary?.title} synopsis={listTemporary?.overview} />
+      </div>
+
+      <div className="div-carrousel">
+        <Carrousel />
+        <Carrousel />
+        <Carrousel/>
+      </div>
+
       
      
 

@@ -2,6 +2,7 @@ import "./imageMain.scss"
 import logoN from "../../assets/netflix.png"
 import { AiFillCaretRight, AiOutlineInfoCircle } from "react-icons/all"
 import Carrousel from "../carrousel/Carrousel"
+import Header from "../header/Header"
 
 type ImageMainProps = {
   style: object
@@ -17,7 +18,6 @@ export default function ImageMain({style, movieOrTv,title,synopsis}:ImageMainPro
   return (
     
     <main>
-      
     <section style={style}>
 
       {/* <img className="image-main" src={image} /> */}
@@ -51,10 +51,6 @@ export default function ImageMain({style, movieOrTv,title,synopsis}:ImageMainPro
       </div>
       
       </section>
-
-<div className="content">
-<Carrousel/>
-</div>
 
 </main>
 

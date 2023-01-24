@@ -4,11 +4,11 @@ main{
 
     display: flex;
     flex-direction: column;
-    position: absolute;
     top: 0;
     z-index: -1;
     width: 100%;
-    background-color: black;
+    
+    
     
 section{
     
@@ -21,7 +21,7 @@ section{
     height: 50vw;
     justify-content: center;
     padding: 0 3%;
-    
+    box-shadow: inset 0px -66px 54px 10px #141414;
 
     .description{
         display: flex;
@@ -123,12 +123,6 @@ section{
            
         }
     }
-
-    .content{
-    
-      
-    }
-
 
 }
 
