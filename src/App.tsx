@@ -32,7 +32,8 @@ const numberAleatory = () => { return Math.floor(Math.random() * 20) }
   const listTemporary = movies[numberAleatory()]
   const image = `https://image.tmdb.org/t/p/original${listTemporary?.backdrop_path}`
   
-
+  const imgMovies = movies.map(img=> img.backdrop_path)
+  
   return (
     <div className="app">
 
@@ -42,9 +43,9 @@ const numberAleatory = () => { return Math.floor(Math.random() * 20) }
       </div>
 
       <div className="div-carrousel">
-        <Carrousel />
-        <Carrousel />
-        <Carrousel/>
+        <Carrousel category="Filmes" id="0" image={imgMovies}/>
+        <Carrousel category="Séries" id="1" image={imgMovies}/>
+        <Carrousel category="Aventura" id="2" image={imgMovies}/>
       </div>
 
       
