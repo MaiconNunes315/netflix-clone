@@ -3,18 +3,72 @@
         
         margin-bottom:4% ;
         width: 100%;
-        
 
-        h2{
-            margin: 0 0 10px 50px;
-            color: white;
-            font-family: "Open Sans";
-            font-weight: 500;
-            font-size: 32px;
+        .category-container{
+
+            display: flex;
+            justify-content: space-between;
+            width: 95.5%;
+            margin: auto;
+        
+            .category-left{
+                display: flex;
+                align-items: center;
+                
+                h2{
+                    color: white;
+                    font-family: "Open Sans";
+                    font-weight: 500;
+                    font-size: 1.6vw;
+                    margin-bottom: 10px;
+                }
+    
+                span{
+                    font-family: "Open Sans";
+                    color: #54b9c5;
+                    font-size: .9vw;
+                    font-weight: 500;
+                    text-shadow: 0px 0px 4px #54B9C5;
+                    margin-left: 10px;
+                    
+                }
+    
+                .hidden{
+                    display: none;
+                    
+                }
+    
+                .arrow{
+                    font-size: 1vw; 
+                    color: #54b9c5;
+                    font-weight: bold;
+                  }
+            }
+
+            .category-right{
+                display: flex;
+                gap: 1px;
+                align-self: center;
+                
+                .item{
+                    width: 12px;
+                    height: 1.6px;
+                    background-color: #595959;
+                }
+
+                .active{
+                    background-color: #fff;
+                }
+            }
         }
         
+        
+
+
+        
+        
         .div-imgs{
-            height: 10vw;
+            height: 9vw;
             position: relative;
             min-height: 100px;
 
@@ -57,15 +111,22 @@
 
             display: flex;
             padding-left: 40px;
-            overflow: hidden;         
+                  
             
             scroll-behavior: smooth;
                   
             .img-carrousel{
                 flex: 0 1 25%;
                 min-height: 100px;
-                height: 10vw;
+                height: 9vw;
                 margin: 0 10px;
+                cursor: pointer;
+                transition: all .5s ;
+
+                &:hover{
+                    transform: scale(1.5, 1.5);
+                }
+                
                 
             }
         }
